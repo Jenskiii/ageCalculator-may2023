@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+<div class="background">
+<div class="container">
+<div class="row">
+  <div class="day col">
+    <p class="day__title error__title date">Day</p>
+    <input type="number" max="31" placeholder="DD" class="day__input input">
+    <p class="error" id="day__error"></p>
+  </div>
+  <div class="month col">
+    <p class="month__title error__title date">Month</p>
+    <input type="number" max="12" placeholder="MM" class="month__input input" required>
+    <p class="error" id="month__error"></p>
+  </div>
+
+  <div class="year col">
+    <p class="year__title error__title date">Year</p>
+    <input type="number" max="2200" placeholder="YYYY" class="year__input input" step="10" required>
+    <p class="error" id="year__error"></p>
+  </div>  
+</div>
+
+
+  <div class="button__container">
+  <button class="button" id="button"><img src="./assets/images/icon-arrow.svg" alt="arrow"></button>
+  </div>
+
+
+<section>
+<div class="results">
+  <h2><span class="purple" id="year">--</span> years</h2>
+  <h2><span class="purple" id="month">--</span> months</h2>
+  <h2><span class="purple" id="day">--</span> days</h2>
+</div> 
+</div>
+</div>
+</section>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Jenski</a>.
+  </div>
+<p id="a"></p>
+  <script src="main.js"></script>
+</body>
+</html>

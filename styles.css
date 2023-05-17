@@ -1,0 +1,170 @@
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+
+*:focus{
+    outline: none;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h2{
+    font-weight: 800;
+    font-style: italic;
+    color: hsl(0, 0%, 8%);
+    line-height: .2em;
+}
+
+p{
+    color: hsl(0, 1%, 44%);
+}
+
+
+/* container styling*/
+.background{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px 30px 110px 30px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+.row{
+    display: flex;
+    padding: 47px 0 70px;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+
+}
+
+.col{
+    width: 33%;
+    line-height: .1rem;
+    margin-right: 15px;
+}
+
+
+/* input */
+.date{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+}
+
+.input{
+    border-radius: 10px;
+    max-width: 88px;
+    padding: 15px 10px;
+    font-size: 1.2rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+}
+
+.input:active, .input:hover,.input:focus{
+    border: 1px solid hsl(259, 100%, 65%);
+    cursor: pointer;
+}
+
+.input input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    font-style: italic;
+    color: hsl(0, 1%, 44%);
+}
+
+.input input::-webkit-input-placeholder { /* WebKit browsers */
+     font-style: italic;
+     color: hsl(0, 1%, 44%);
+}
+
+.error{
+    color:  hsl(0, 100%, 67%);
+    font-style: italic;
+    font-size: .8rem;
+}
+
+
+/*button*/
+
+.button{
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+.button:active, .button:hover{
+    background-color: hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+.button:active{
+    transform: translateY(1px);
+}
+
+
+.button__container{
+    display: flex;
+    justify-content: center;
+    transform: translateY(-50%);
+}
+
+
+/* results section */
+
+.results{
+    padding-bottom: 30px;
+    margin-top: -20px;
+}
+
+.purple{
+    color: hsl(259, 100%, 65%);
+}
+
+
+
+/* error*/
+.input.error{
+    border-color: hsl(0, 100%, 67%);
+    color: hsl(0, 0%, 8%);
+    font-size: 1.2rem;
+}
+
+.date.error{
+    color: hsl(0, 100%, 67%);
+    font-style: normal;
+    font-size: 1rem;
+}
+
+
+/*media*/
+
+@media (min-width: 900px) {
+    .background{
+        max-width: 840px;
+    }
+
+    .button__container{
+        justify-content: flex-end;
+    }
+
+    .button{
+        width: 80px;
+        height: 80px;
+    }
+}
